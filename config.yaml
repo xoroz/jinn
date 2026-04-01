@@ -1,0 +1,24 @@
+jinn:
+  version: 0.9.3
+gateway:
+  port: 7777
+  host: 127.0.0.1
+engines:
+  default: claude
+  claude:
+    bin: claude
+    model: sonnet
+    effortLevel: medium
+  codex:
+    bin: codex
+    model: gpt-5.4
+connectors: {}
+portal:
+  portalName: Jarvis
+  onboarded: true
+  operatorName: Feli
+  language: English
+logging:
+  file: true
+  stdout: true
+  level: debug
